@@ -1,0 +1,38 @@
+# API Framework
+fastapi==0.115.12
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# Data validation
+pydantic==2.11.2
+pydantic-settings==2.9.1
+
+# RAG & Embeddings (local, free)
+chromadb==0.6.3
+sentence-transformers==4.1.0
+
+# OCR (local, free)
+easyocr==1.7.2
+
+# LLM client for Ollama (local, free)
+ollama==0.4.8
+
+# PII Masking
+spacy==3.8.5
+
+# Image processing
+Pillow==11.2.1
+
+# Hashing & fraud detection
+imagehash==4.3.1
+
+# Database
+# sqlite3 is built into Python — no install needed
+
+# Testing
+pytest==8.3.5
+pytest-asyncio==0.26.0
+httpx==0.28.1
+
+# Utilities
+python-dotenv==1.1.0
