@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source /c/Users/user/Documents/turaco_ins_tech/.venv/Scripts/activate)",
+      "Bash(pip install:*)"
+    ]
+  }
+}

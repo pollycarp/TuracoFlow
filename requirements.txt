@@ -7,8 +7,8 @@ python-multipart==0.0.20
 pydantic==2.11.2
 pydantic-settings==2.9.1
 
-# RAG & Embeddings (local, free)
-chromadb==0.6.3
+# RAG & Embeddings (local, free — no C++ compilation needed)
+lancedb==0.20.0
 sentence-transformers==4.1.0
 
 # OCR (local, free)
@@ -18,10 +18,10 @@ easyocr==1.7.2
 ollama==0.4.8
 
 # PII Masking
-spacy==3.8.5
+spacy==3.8.13
 
 # Image processing
-Pillow==11.2.1
+Pillow>=11.0.0
 
 # Hashing & fraud detection
 imagehash==4.3.1
