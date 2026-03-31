@@ -29,6 +29,24 @@ from app.core.config import settings
 
 logger = logging.getLogger(__name__)
 
+# Lazy singleton — EasyOCR takes ~10s to initialise; we only want to do it once
+_easyocr_reader: Optional[easyocr.Reader] = None
+
+
+def _get_ocr_reader() -> easyocr.Reader:
+    global _easyocr_reader
+    if _easyocr_reader is None:
+        logger.info("Initialising EasyOCR reader (first-time load)...")
+        _easyocr_reader = easyocr.Reader(["en"], gpu=False, verbose=False)
+    return _easyocr_reader
+
+
+def _ocr_raw_text(image_path: str) -> str:
+    """Extract raw text from image using the cached EasyOCR reader."""
+    reader = _get_ocr_reader()
+    results = reader.readtext(image_path, detail=0)
+    return "\n".join(results)
+
 # Fields we must extract from every receipt
 REQUIRED_FIELDS = [
     "patient_name",
@@ -174,19 +192,21 @@ def _extract_via_llava(image_path: str) -> tuple[Optional[dict], float]:
         return None, 0.0
 
 
-def _extract_via_easyocr_and_llm(image_path: str) -> tuple[Optional[dict], float]:
+def _extract_via_easyocr_and_llm(
+    image_path: str, ocr_text: Optional[str] = None
+) -> tuple[Optional[dict], float]:
     """
     Fallback path: EasyOCR extracts raw text → LLaMA 3.2 structures it.
+    Pass ocr_text to reuse already-extracted text and skip a second OCR run.
 
     Returns:
         (extracted_data, confidence_score)
     """
     try:
-        # Step 1: EasyOCR — extract raw text
-        logger.info("Fallback: running EasyOCR on image...")
-        reader = easyocr.Reader(["en"], gpu=False, verbose=False)
-        results = reader.readtext(image_path, detail=0)
-        ocr_text = "\n".join(results)
+        # Step 1: EasyOCR — extract raw text (skip if already provided)
+        if ocr_text is None:
+            logger.info("Fallback: running EasyOCR on image...")
+            ocr_text = _ocr_raw_text(image_path)
 
         if not ocr_text.strip():
             logger.warning("EasyOCR returned empty text")
@@ -238,22 +258,78 @@ def _image_blur_score(image_path: str) -> float:
     return round(score, 3)
 
 
-def _infer_nights(data: dict) -> dict:
+DATE_FORMATS = [
+    "%Y-%m-%d",
+    "%d/%m/%Y",
+    "%m/%d/%Y",
+    "%d %B %Y",
+    "%B %d, %Y",
+    "%d-%m-%Y",
+    "%d.%m.%Y",
+    "%d %b %Y",
+    "%b %d, %Y",
+]
+
+
+def _parse_date_flexible(date_str: str) -> Optional[datetime]:
+    """Try multiple date formats to parse a date string from LLM output."""
+    if not date_str:
+        return None
+    for fmt in DATE_FORMATS:
+        try:
+            return datetime.strptime(date_str.strip(), fmt)
+        except ValueError:
+            continue
+    return None
+
+
+def _rescue_nights_from_text(raw_text: str) -> Optional[int]:
     """
-    If nights is None but both dates are present, compute nights from dates.
+    Regex-based rescue: find 'Nights: X' or 'X nights' patterns in OCR text.
+    Used when the LLM fails to extract nights reliably.
+    """
+    text = raw_text.lower()
+    patterns = [
+        r'nights?\s*[:\-]\s*(\d+)',
+        r'(\d+)\s*nights?\b',
+        r'no\.?\s*of\s*nights?\s*[:\-]\s*(\d+)',
+        r'length\s+of\s+stay\s*[:\-]\s*(\d+)',
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text)
+        if match:
+            value = int(match.group(1))
+            logger.info(f"Regex rescued nights={value} using pattern '{pattern}'")
+            return value
+    return None
+
+
+def _infer_nights(data: dict, raw_text: str = "") -> dict:
+    """
+    Fill in missing nights using two strategies (in order):
+      1. Compute from admission_date and discharge_date (handles multiple formats)
+      2. Regex rescue from raw OCR text
     Mutates and returns the data dict.
     """
     if data.get("nights") is not None:
         return data
-    try:
-        admit = datetime.strptime(data["admission_date"], "%Y-%m-%d")
-        discharge = datetime.strptime(data["discharge_date"], "%Y-%m-%d")
+
+    # Strategy 1: compute from dates
+    admit = _parse_date_flexible(data.get("admission_date") or "")
+    discharge = _parse_date_flexible(data.get("discharge_date") or "")
+    if admit and discharge:
         computed = (discharge - admit).days
         if computed > 0:
             data["nights"] = computed
             logger.info(f"Computed nights from dates: {computed}")
-    except (TypeError, ValueError, KeyError):
-        pass
+            return data
+
+    # Strategy 2: regex on raw OCR text
+    if raw_text:
+        rescued = _rescue_nights_from_text(raw_text)
+        if rescued is not None:
+            data["nights"] = rescued
+
     return data
 
 
@@ -284,17 +360,25 @@ def extract_receipt(image_path: str) -> dict:
     data, confidence = _extract_via_llava(image_path)
 
     if data is not None and _count_filled_fields(data) >= MIN_REQUIRED_FIELDS:
+        # Try date-based calculation first; only run OCR if nights still missing
         data = _infer_nights(data)
+        if data.get("nights") is None:
+            logger.info("nights still None after date inference — running OCR rescue...")
+            raw_text = _ocr_raw_text(image_path)
+            data = _infer_nights(data, raw_text)
         adjusted = round(confidence * blur_score, 2)
         return _build_result(data, adjusted, method="llava")
 
     logger.info(f"LLaVA result insufficient ({_count_filled_fields(data or {})} fields). Trying fallback...")
 
     # --- Fallback: EasyOCR + LLaMA ---
-    fallback_data, fallback_confidence = _extract_via_easyocr_and_llm(image_path)
+    # _extract_via_easyocr_and_llm already runs OCR internally; capture the text
+    # for _infer_nights reuse by running it here and passing it down
+    raw_text = _ocr_raw_text(image_path)
+    fallback_data, fallback_confidence = _extract_via_easyocr_and_llm(image_path, ocr_text=raw_text)
 
     if fallback_data is not None:
-        fallback_data = _infer_nights(fallback_data)
+        fallback_data = _infer_nights(fallback_data, raw_text)
         adjusted = round(fallback_confidence * blur_score, 2)
         return _build_result(fallback_data, adjusted, method="easyocr+llm")
 
