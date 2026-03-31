@@ -1,0 +1,72 @@
+POLICY DOCUMENT
+===============
+Policy Name: Last Expense Nigeria
+Policy Code: TUR-NG-LE-001
+Country: Nigeria
+Product Type: Last Expense (Funeral Cash Benefit)
+Insurer: Turaco Insurance
+Currency: NGN (Nigerian Naira) / USD equivalent shown in brackets
+
+OVERVIEW
+--------
+Last Expense Nigeria provides a lump-sum cash payment to the designated
+beneficiary upon death of the policyholder. The payment helps families manage
+the high cost of Nigerian burial ceremonies and funeral arrangements.
+
+ELIGIBILITY
+-----------
+- Age: 18 to 70 years at enrollment
+- Residency: Must be a Nigeria resident
+- Enrollment: Via approved Turaco Nigeria partners
+- Waiting period: 6 months for natural causes; no waiting period for accidents
+
+COVERAGE DETAILS
+----------------
+Death Benefit (Natural Causes): NGN 100,000 (~$120 USD)
+Death Benefit (Accidental Death): NGN 150,000 (~$180 USD)
+Repatriation Assistance: Up to NGN 30,000 (~$36 USD) for transport within Nigeria
+
+COVERED CAUSES OF DEATH
+------------------------
+- Natural illness (post 6-month waiting period)
+- Road traffic accident
+- Workplace accident
+- Drowning
+- Fire-related death
+- Any sudden, unexpected accidental cause
+
+EXCLUSIONS
+----------
+- Suicide or self-inflicted death
+- Death from participation in criminal activity
+- Death from war or terrorism
+- Death from substance abuse
+
+CLAIM REQUIREMENTS
+------------------
+Submit via WhatsApp:
+1. Certified Death Certificate issued by Nigerian authorities
+2. Burial or cremation permit
+3. NIN (National Identification Number) or valid ID of deceased
+4. Valid ID of beneficiary/claimant
+5. Evidence of relationship to deceased if beneficiary is not spouse
+6. Turaco policy number of the deceased
+
+PAYOUT
+------
+- Paid to nominated beneficiary via OPay, bank transfer, or mobile wallet
+- Must be filed within 90 days of death
+- Processed within 3 working days of complete document submission
+
+CLAIM LIMITS SUMMARY
+--------------------
+Natural death benefit: NGN 100,000
+Accidental death benefit: NGN 150,000
+Repatriation support: NGN 30,000
+Filing deadline: 90 days from date of death
+
+CONTACT
+-------
+Claims WhatsApp: +234 700 000 0000
+Email: claims-ng@turaco.com
+Operating Hours: Monday–Friday 8am–6pm WAT

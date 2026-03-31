@@ -1,0 +1,42 @@
+hospital_id,hospital_name,country,city,facility_type,turaco_verified
+KE001,Kenyatta National Hospital,Kenya,Nairobi,Public Referral Hospital,true
+KE002,Nairobi Hospital,Kenya,Nairobi,Private Hospital,true
+KE003,Aga Khan University Hospital,Kenya,Nairobi,Private Hospital,true
+KE004,MP Shah Hospital,Kenya,Nairobi,Private Hospital,true
+KE005,Mater Misericordiae Hospital,Kenya,Nairobi,Private Hospital,true
+KE006,Gertrude's Children's Hospital,Kenya,Nairobi,Private Hospital,true
+KE007,Mbagathi District Hospital,Kenya,Nairobi,Public District Hospital,true
+KE008,Kisumu County Referral Hospital,Kenya,Kisumu,Public Referral Hospital,true
+KE009,Coast General Teaching and Referral Hospital,Kenya,Mombasa,Public Referral Hospital,true
+KE010,Mombasa Hospital,Kenya,Mombasa,Private Hospital,true
+KE011,St. Mary's Mission Hospital,Kenya,Nairobi,Faith-Based Hospital,true
+KE012,Karen Hospital,Kenya,Nairobi,Private Hospital,true
+KE013,Nakuru Level 5 Hospital,Kenya,Nakuru,Public Referral Hospital,true
+KE014,Eldoret Referral Hospital,Kenya,Eldoret,Public Referral Hospital,true
+KE015,Saburi Medical Centre,Kenya,Nairobi,Private Clinic,true
+UG001,Mulago National Referral Hospital,Uganda,Kampala,Public Referral Hospital,true
+UG002,International Hospital Kampala,Uganda,Kampala,Private Hospital,true
+UG003,Aga Khan Hospital Kampala,Uganda,Kampala,Private Hospital,true
+UG004,Mengo Hospital,Uganda,Kampala,Faith-Based Hospital,true
+UG005,Case Medical Centre,Uganda,Kampala,Private Hospital,true
+UG006,Nsambya Hospital,Uganda,Kampala,Faith-Based Hospital,true
+UG007,Jinja Regional Referral Hospital,Uganda,Jinja,Public Referral Hospital,true
+UG008,Mbarara Regional Referral Hospital,Uganda,Mbarara,Public Referral Hospital,true
+UG009,Gulu Regional Referral Hospital,Uganda,Gulu,Public Referral Hospital,true
+UG010,Nakasero Hospital,Uganda,Kampala,Private Hospital,true
+UG011,Rubaga Hospital,Uganda,Kampala,Faith-Based Hospital,true
+UG012,CoRSU Rehabilitation Hospital,Uganda,Kampala,Specialist Hospital,true
+NG001,Lagos University Teaching Hospital,Nigeria,Lagos,Public Teaching Hospital,true
+NG002,National Hospital Abuja,Nigeria,Abuja,Public Hospital,true
+NG003,Eko Hospital,Nigeria,Lagos,Private Hospital,true
+NG004,St. Nicholas Hospital,Nigeria,Lagos,Private Hospital,true
+NG005,Reddington Hospital,Nigeria,Lagos,Private Hospital,true
+NG006,University College Hospital Ibadan,Nigeria,Ibadan,Public Teaching Hospital,true
+NG007,Aminu Kano Teaching Hospital,Nigeria,Kano,Public Teaching Hospital,true
+NG008,University of Nigeria Teaching Hospital,Nigeria,Enugu,Public Teaching Hospital,true
+NG009,Port Harcourt Teaching Hospital,Nigeria,Port Harcourt,Public Teaching Hospital,true
+NG010,Nisa Premier Hospital,Nigeria,Abuja,Private Hospital,true
+NG011,Cedarcrest Hospital,Nigeria,Abuja,Private Hospital,true
+NG012,Kelina Hospital,Nigeria,Abuja,Private Hospital,true
+NG013,Island General Hospital,Nigeria,Lagos,Public Hospital,true
+NG014,Massey Street Children's Hospital,Nigeria,Lagos,Public Hospital,true

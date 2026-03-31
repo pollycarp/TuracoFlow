@@ -1,0 +1,91 @@
+POLICY DOCUMENT
+===============
+Policy Name: Personal Accident Uganda
+Policy Code: TUR-UG-PA-001
+Country: Uganda
+Product Type: Personal Accident
+Insurer: Turaco Insurance
+Currency: UGX (Ugandan Shilling) / USD equivalent shown in brackets
+
+OVERVIEW
+--------
+Personal Accident insurance provides cash compensation for accidental injuries,
+permanent disability, or accidental death. Designed for boda-boda riders,
+construction workers, and informal sector workers in Uganda.
+
+ELIGIBILITY
+-----------
+- Age: 18 to 60 years at enrollment
+- Residency: Must be a Uganda resident
+- Enrollment: Via Tugende, Airtel Money, or approved Turaco partners
+- Waiting period: None — coverage begins immediately upon activation
+
+COVERAGE DETAILS
+----------------
+Accidental Death Benefit: UGX 1,000,000 (~$270 USD)
+Permanent Total Disability: UGX 1,000,000 (~$270 USD)
+Permanent Partial Disability: UGX 100,000–500,000 depending on severity
+Medical Expense Reimbursement (Accident-related): Up to UGX 200,000 (~$54 USD)
+Hospital Cash (Accident-related admission): UGX 30,000/night up to 10 nights
+
+COVERED ACCIDENT TYPES
+-----------------------
+- Road traffic accidents (boda-boda, matatu, vehicle)
+- Workplace accidents (construction, factory, farm)
+- Falls resulting in fractures or injuries
+- Electrocution accidents
+- Burns from fire or explosion
+- Drowning (non-suicidal)
+- Any sudden, violent, external event causing bodily injury
+
+DISABILITY SCALE
+----------------
+Loss of both hands or feet: 100% (UGX 1,000,000)
+Loss of one hand and one foot: 100% (UGX 1,000,000)
+Loss of sight in both eyes: 100% (UGX 1,000,000)
+Loss of one leg above knee: 60% (UGX 600,000)
+Loss of one arm above elbow: 60% (UGX 600,000)
+Loss of one eye: 40% (UGX 400,000)
+Loss of thumb: 20% (UGX 200,000)
+Loss of index finger: 10% (UGX 100,000)
+
+EXCLUSIONS
+----------
+- Self-inflicted injuries or suicide attempts
+- Injuries from participation in criminal activities
+- Injuries while under the influence of alcohol or drugs
+- Pre-existing physical disabilities
+- War, civil unrest, or terrorism
+- Extreme sports (mountaineering, skydiving) unless declared at enrollment
+- Illness-related conditions (use HospiCash for illness)
+
+CLAIM REQUIREMENTS
+------------------
+Submit via WhatsApp:
+1. Police report (for road accidents — P3 form)
+2. Hospital medical report describing injuries and treatment
+3. Discharge summary
+4. Photos of injuries if available (optional but helpful)
+5. National ID of claimant
+6. Turaco policy number
+
+PAYOUT
+------
+- Medical reimbursements: within 3 working days
+- Disability claims: within 5 working days after assessment
+- Death claims: within 5 working days of receiving all documents
+- All payments via Airtel Money or MTN Mobile Money
+
+CLAIM LIMITS SUMMARY
+--------------------
+Accidental death: UGX 1,000,000
+Total disability: UGX 1,000,000
+Medical reimbursement cap: UGX 200,000
+Hospital cash per night: UGX 30,000
+Maximum hospital cash per claim: UGX 300,000 (10 nights)
+
+CONTACT
+-------
+Claims WhatsApp: +256 700 000 000
+Email: claims-ug@turaco.com
+Operating Hours: Monday–Friday 8am–6pm EAT

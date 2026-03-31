@@ -1,0 +1,82 @@
+POLICY DOCUMENT
+===============
+Policy Name: HospiCash Kenya
+Policy Code: TUR-KE-HC-001
+Country: Kenya
+Product Type: HospiCash
+Insurer: Turaco Insurance
+Currency: KES (Kenyan Shilling) / USD equivalent shown in brackets
+
+OVERVIEW
+--------
+HospiCash provides a daily cash benefit for every night a policyholder spends
+as an inpatient in a registered hospital. The benefit is paid regardless of
+actual medical bills, allowing the customer to cover lost income, transport,
+or food for their family.
+
+ELIGIBILITY
+-----------
+- Age: 18 to 65 years at enrollment
+- Residency: Must be a Kenya resident
+- Enrollment: Via approved Turaco partners (M-KOPA, Safaricom, Shell)
+- Waiting period: 14 days from policy activation (no waiting period for accidents)
+
+COVERAGE DETAILS
+----------------
+Daily Cash Benefit: KES 1,000 (~$7.50 USD) per night of inpatient stay
+Maximum Benefit per Claim: KES 10,000 (~$75 USD) — 10 nights maximum
+Maximum Benefit per Year: KES 20,000 (~$150 USD)
+Minimum Qualifying Stay: 1 night (must be admitted, not just outpatient)
+
+COVERED CONDITIONS (Diagnosis Codes)
+--------------------------------------
+The following conditions qualify for HospiCash if treatment requires inpatient admission:
+- Malaria (ICD-10: B50–B54)
+- Typhoid Fever (ICD-10: A01.0)
+- Pneumonia (ICD-10: J18)
+- Tuberculosis (ICD-10: A15–A19)
+- Acute Gastroenteritis / Diarrhoea (ICD-10: A09)
+- Urinary Tract Infection (ICD-10: N39.0)
+- Hypertensive Crisis (ICD-10: I10)
+- Diabetic Emergency (ICD-10: E11)
+- Appendicitis (ICD-10: K37)
+- Road Traffic Accident injuries (ICD-10: V01–V99)
+- Maternity complications (ICD-10: O00–O99) — female policyholders only
+- Surgical procedures requiring overnight admission
+
+EXCLUSIONS
+----------
+- Outpatient visits (no overnight stay)
+- Cosmetic or elective procedures not medically necessary
+- Pre-existing conditions diagnosed before enrollment (first 6 months)
+- Self-inflicted injuries or substance abuse
+- Treatment outside Kenya
+- Experimental treatments not approved by Kenya Medical Board
+
+CLAIM REQUIREMENTS
+------------------
+To file a claim, the following documents must be submitted via WhatsApp:
+1. Hospital discharge summary or admission receipt
+2. Receipt showing total charges and itemized bill
+3. Diagnosis note from attending doctor (must include ICD-10 code or diagnosis name)
+4. Patient's Turaco policy number
+5. National ID or passport copy of policyholder
+
+PAYOUT
+------
+- Approved claims paid to M-PESA within 3 working days
+- Amount = (Number of qualifying nights) x KES 1,000
+- Capped at KES 10,000 per single claim event
+
+CLAIM LIMITS SUMMARY
+--------------------
+Single claim maximum: KES 10,000 (10 nights)
+Annual maximum: KES 20,000
+Per-night benefit: KES 1,000
+Minimum nights for claim: 1
+
+CONTACT
+-------
+Claims WhatsApp: +254 700 000 000
+Email: claims@turaco.com
+Operating Hours: Monday–Friday 8am–6pm EAT

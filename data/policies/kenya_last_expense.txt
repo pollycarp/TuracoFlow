@@ -1,0 +1,71 @@
+POLICY DOCUMENT
+===============
+Policy Name: Last Expense Kenya
+Policy Code: TUR-KE-LE-001
+Country: Kenya
+Product Type: Last Expense (Funeral Cash Benefit)
+Insurer: Turaco Insurance
+Currency: KES (Kenyan Shilling) / USD equivalent shown in brackets
+
+OVERVIEW
+--------
+Last Expense insurance provides a lump-sum cash payment to the beneficiary
+upon the death of the policyholder. The benefit is intended to cover funeral
+and burial costs, reducing financial burden on the family during bereavement.
+
+ELIGIBILITY
+-----------
+- Age: 18 to 70 years at enrollment
+- Residency: Must be a Kenya resident
+- Enrollment: Via approved Turaco partners
+- Waiting period: 6 months for natural causes; no waiting period for accidental death
+
+COVERAGE DETAILS
+----------------
+Death Benefit (Natural Causes): KES 30,000 (~$225 USD)
+Death Benefit (Accidental Death): KES 50,000 (~$375 USD)
+Repatriation Assistance: Up to KES 10,000 (~$75 USD) for transport of remains within Kenya
+
+COVERED CAUSES OF DEATH
+------------------------
+- Natural illness (after 6-month waiting period)
+- Road traffic accident
+- Workplace accident
+- Drowning
+- Fire-related death
+- Any sudden, unexpected cause
+
+EXCLUSIONS
+----------
+- Suicide or self-inflicted death
+- Death resulting from participation in criminal activity
+- Death from war or civil unrest
+- Death while under the influence of non-prescribed substances
+
+CLAIM REQUIREMENTS
+------------------
+To file a Last Expense claim, the following must be submitted via WhatsApp:
+1. Certified copy of Death Certificate (from registrar of births and deaths)
+2. Burial permit
+3. National ID of the deceased
+4. National ID of the beneficiary / claimant
+5. Proof of relationship to the deceased (if beneficiary is not spouse)
+6. Turaco policy number of the deceased
+
+PAYOUT
+------
+- Paid to nominated beneficiary via M-PESA or bank transfer within 3 working days
+- Lump sum, not per-night benefit
+
+CLAIM LIMITS SUMMARY
+--------------------
+Natural death benefit: KES 30,000
+Accidental death benefit: KES 50,000
+Repatriation support: KES 10,000
+Claim period: Must be filed within 90 days of death
+
+CONTACT
+-------
+Claims WhatsApp: +254 700 000 000
+Email: claims@turaco.com
+Operating Hours: Monday–Friday 8am–6pm EAT

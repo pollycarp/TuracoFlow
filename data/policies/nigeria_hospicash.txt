@@ -1,0 +1,82 @@
+POLICY DOCUMENT
+===============
+Policy Name: HospiCash Nigeria
+Policy Code: TUR-NG-HC-001
+Country: Nigeria
+Product Type: HospiCash
+Insurer: Turaco Insurance
+Currency: NGN (Nigerian Naira) / USD equivalent shown in brackets
+
+OVERVIEW
+--------
+HospiCash Nigeria provides a daily cash benefit for inpatient hospital stays.
+Designed for low-income earners across Lagos, Abuja, Kano, Port Harcourt, and
+other major Nigerian cities, distributed through NIBSS Instant Pay and partner
+mobile wallets.
+
+ELIGIBILITY
+-----------
+- Age: 18 to 65 years at enrollment
+- Residency: Must be a Nigeria resident
+- Enrollment: Via approved Turaco Nigeria partners
+- Waiting period: 14 days from activation (no waiting period for accidents)
+
+COVERAGE DETAILS
+----------------
+Daily Cash Benefit: NGN 5,000 (~$6 USD) per night of inpatient stay
+Maximum Benefit per Claim: NGN 50,000 (~$60 USD) — 10 nights maximum
+Maximum Benefit per Year: NGN 100,000 (~$120 USD)
+Minimum Qualifying Stay: 1 night (formal inpatient admission required)
+
+COVERED CONDITIONS (Diagnosis Codes)
+--------------------------------------
+- Malaria (ICD-10: B50–B54)
+- Typhoid Fever (ICD-10: A01.0)
+- Pneumonia (ICD-10: J18)
+- Tuberculosis (ICD-10: A15–A19)
+- Sickle Cell Crisis (ICD-10: D57) — high prevalence in Nigeria
+- Meningitis (ICD-10: G03)
+- Hypertensive Emergency (ICD-10: I10)
+- Diabetic Emergency (ICD-10: E11)
+- Acute Gastroenteritis (ICD-10: A09)
+- Urinary Tract Infection requiring admission (ICD-10: N39.0)
+- Road Traffic Accident injuries (ICD-10: V01–V99)
+- Maternity complications (ICD-10: O00–O99) — female policyholders only
+- Surgical procedures requiring overnight admission
+
+EXCLUSIONS
+----------
+- Outpatient consultations without overnight admission
+- Cosmetic procedures
+- Pre-existing conditions (first 6 months)
+- Self-inflicted injuries
+- Treatment outside Nigeria
+- Traditional / herbal medicine costs
+
+CLAIM REQUIREMENTS
+------------------
+Submit via WhatsApp:
+1. Hospital discharge summary or inpatient admission receipt
+2. Itemized hospital bill
+3. Doctor's note with diagnosis (ICD-10 code or diagnosis name)
+4. Policyholder's Turaco policy number
+5. Valid ID (NIN, Driver's Licence, International Passport, or Voter's Card)
+
+PAYOUT
+------
+- Approved claims paid to OPay, Kuda Bank, or bank account within 3 working days
+- Amount = (qualifying nights) x NGN 5,000
+- Capped at NGN 50,000 per single claim event
+
+CLAIM LIMITS SUMMARY
+--------------------
+Single claim maximum: NGN 50,000 (10 nights)
+Annual maximum: NGN 100,000
+Per-night benefit: NGN 5,000
+Minimum nights: 1
+
+CONTACT
+-------
+Claims WhatsApp: +234 700 000 0000
+Email: claims-ng@turaco.com
+Operating Hours: Monday–Friday 8am–6pm WAT

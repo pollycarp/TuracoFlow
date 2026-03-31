@@ -1,0 +1,80 @@
+POLICY DOCUMENT
+===============
+Policy Name: HospiCash Uganda
+Policy Code: TUR-UG-HC-001
+Country: Uganda
+Product Type: HospiCash
+Insurer: Turaco Insurance
+Currency: UGX (Ugandan Shilling) / USD equivalent shown in brackets
+
+OVERVIEW
+--------
+HospiCash Uganda provides a daily cash benefit for each night spent as an
+inpatient in a registered Ugandan hospital. Distributed via Airtel Money and
+Turaco partner networks across Uganda.
+
+ELIGIBILITY
+-----------
+- Age: 18 to 65 years at enrollment
+- Residency: Must be a Uganda resident
+- Enrollment: Via Airtel Money Uganda, Tugende, or other approved partners
+- Waiting period: 14 days from activation (no waiting period for accidents)
+
+COVERAGE DETAILS
+----------------
+Daily Cash Benefit: UGX 30,000 (~$8 USD) per night of inpatient stay
+Maximum Benefit per Claim: UGX 300,000 (~$80 USD) — 10 nights maximum
+Maximum Benefit per Year: UGX 600,000 (~$160 USD)
+Minimum Qualifying Stay: 1 night (inpatient admission required)
+
+COVERED CONDITIONS (Diagnosis Codes)
+--------------------------------------
+- Malaria (ICD-10: B50–B54) — high prevalence, automatically fast-tracked
+- Typhoid Fever (ICD-10: A01.0)
+- Pneumonia (ICD-10: J18)
+- Tuberculosis (ICD-10: A15–A19)
+- Cholera (ICD-10: A00) — specific to Uganda endemic zones
+- Acute Gastroenteritis (ICD-10: A09)
+- Sickle Cell Crisis (ICD-10: D57)
+- Urinary Tract Infection (ICD-10: N39.0)
+- Road Traffic Accident injuries (ICD-10: V01–V99)
+- Boda-boda (motorcycle) accident injuries
+- Maternity complications (ICD-10: O00–O99) — female policyholders only
+- Surgical procedures requiring overnight admission
+
+EXCLUSIONS
+----------
+- Outpatient visits without formal admission
+- Cosmetic or elective procedures
+- Pre-existing conditions (first 6 months)
+- Self-inflicted injuries
+- Treatment outside Uganda
+- Traditional medicine costs
+
+CLAIM REQUIREMENTS
+------------------
+Submit via WhatsApp:
+1. Hospital discharge summary or inpatient receipt
+2. Itemized bill from hospital
+3. Doctor's diagnosis note (ICD-10 code or diagnosis name required)
+4. Policyholder's Turaco policy number
+5. National ID (Uganda National ID or valid passport)
+
+PAYOUT
+------
+- Approved claims paid to Airtel Money or MTN Mobile Money within 3 working days
+- Amount = (qualifying nights) x UGX 30,000
+- Capped at UGX 300,000 per claim
+
+CLAIM LIMITS SUMMARY
+--------------------
+Single claim maximum: UGX 300,000 (10 nights)
+Annual maximum: UGX 600,000
+Per-night benefit: UGX 30,000
+Minimum nights: 1
+
+CONTACT
+-------
+Claims WhatsApp: +256 700 000 000
+Email: claims-ug@turaco.com
+Operating Hours: Monday–Friday 8am–6pm EAT
