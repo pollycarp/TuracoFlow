@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     ollama_text_model: str = "llama3.2:latest"
     ollama_embed_model: str = "nomic-embed-text"
 
-    lancedb_path: str = "./lancedb"
+    lancedb_path: str = "./vector_store"
     lancedb_table_name: str = "turaco_policies"
 
     sqlite_db_path: str = "./claims.db"

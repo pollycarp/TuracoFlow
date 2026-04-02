@@ -81,9 +81,9 @@ def test_index_builds_successfully(rag):
 
 def test_reindex_is_idempotent(rag):
     """Re-building the index should not duplicate records."""
-    count_before = rag.table.count_rows()
+    count_before = rag.store.count()
     rag.build_index()
-    count_after = rag.table.count_rows()
+    count_after = rag.store.count()
     assert count_before == count_after, "Re-indexing must not create duplicate records"
 
 
