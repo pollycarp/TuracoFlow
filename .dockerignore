@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Local data that should come from volumes, not the image
+claims.db
+test_fraud.db
+vector_store/
+lancedb/
+chroma_db/
+
+# Dev / test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Claude Code
+.claude/
+
+# Secrets
+.env

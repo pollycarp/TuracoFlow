@@ -120,6 +120,27 @@ Example output:
 uvicorn app.main:app --reload
 ```
 
+---
+
+## Docker
+
+The service is fully containerised. Ollama runs on the host machine — the container talks to it over `host.docker.internal`.
+
+```bash
+# Build and start (policy index is built automatically on first boot)
+docker compose up --build
+
+# Stop
+docker compose down
+```
+
+The vector store and SQLite database are stored in named Docker volumes so claim history and the policy index survive container restarts.
+
+To rebuild the policy index manually:
+```bash
+docker compose exec turacoflow python scripts/build_index.py
+```
+
 Endpoints:
 
 | Method | Path | Description |
