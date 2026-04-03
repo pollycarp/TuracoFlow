@@ -67,13 +67,14 @@ with right:
         st.warning("Please fill in both Customer ID and Policy ID.")
 
     else:
-        with st.spinner("Processing claim…"):
+        st.caption("⏳ First request may take 2–3 minutes while the vision model loads into memory.")
+        with st.spinner("Processing claim… (this can take a minute)"):
             try:
                 response = requests.post(
                     f"{API_URL}/claims/submit",
                     data={"customer_id": customer_id, "policy_id": policy_id},
                     files={"image": (uploaded.name, uploaded, uploaded.type)},
-                    timeout=300,
+                    timeout=600,
                 )
                 result = response.json()
             except requests.exceptions.ConnectionError:

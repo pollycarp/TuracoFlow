@@ -7,6 +7,7 @@ services:
     environment:
       # Point Ollama at the host machine — models run outside the container
       OLLAMA_BASE_URL: http://host.docker.internal:11434
+      OLLAMA_HOST: http://host.docker.internal:11434
       SQLITE_DB_PATH: /data/claims.db
       LANCEDB_PATH: /data/vector_store
       APP_ENV: production
@@ -31,18 +32,12 @@ services:
       start_period: 60s
 
   ui:
-    image: python:3.12-slim
+    build: ./ui
     container_name: turacoflow_ui
-    working_dir: /app
-    command: >
-      bash -c "pip install --no-cache-dir -r ui/requirements.txt -q &&
-               streamlit run ui/app.py --server.port 8501 --server.address 0.0.0.0"
     ports:
       - "8501:8501"
     environment:
       API_URL: http://turacoflow:8000
-    volumes:
-      - ./ui:/app/ui
     depends_on:
       - turacoflow
     restart: unless-stopped
