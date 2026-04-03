@@ -12,7 +12,12 @@ Usage:
 import sys
 import textwrap
 import uuid
+import warnings
 from pathlib import Path
+
+# Suppress torch/EasyOCR deprecation noise — irrelevant to the demo
+warnings.filterwarnings("ignore", category=UserWarning)
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -74,9 +79,14 @@ def run_demo(image_path: str):
 
     # ── Step 3: PII masking ───────────────────────────────────────────────────
     from app.modules.pii_masker import mask_receipt_result
-    masked        = mask_receipt_result(extraction)
+    masked         = mask_receipt_result(extraction)
     extracted_data = masked["data"]
-    redacted_count = masked.get("redacted_fields", 0)
+    # Count fields that were actually redacted
+    original_data   = extraction.get("data", {})
+    redacted_count  = sum(
+        1 for k, v in extracted_data.items()
+        if "[REDACTED" in str(v) and str(original_data.get(k)) != str(v)
+    )
     _step(3, STEPS, "Masking PII...",
           f"{redacted_count} field(s) redacted" if redacted_count else "no PII found")
 
@@ -134,11 +144,12 @@ def run_demo(image_path: str):
     if decision.policy_matched:
         _field("  POLICY",  decision.policy_matched, indent=2)
 
-    # Wrap long reason lines
-    reason_lines = textwrap.wrap(decision.reason, WIDTH - 26)
+    # Wrap long reason lines (continuation aligned after the label+colon)
+    # indent=2 + 22-char label field = 24 chars before value
+    reason_lines = textwrap.wrap(decision.reason, WIDTH - 24)
     _field("  REASON",  reason_lines[0], indent=2)
     for line in reason_lines[1:]:
-        print(f"{'':28}{line}")
+        print(f"{'':24}{line}")
 
     _field("  CONFIDENCE", f"{confidence:.0%}", indent=2)
 
@@ -151,7 +162,7 @@ def run_demo(image_path: str):
         print("  Audit trail:")
         for check_name, result in checks.items():
             status_icon = "✓" if result.get("passed") else "✗"
-            note = result.get("note", "")
+            note = result.get("detail", "")
             short_note = (note[:40] + "…") if len(note) > 40 else note
             print(f"    {status_icon}  {check_name:<22} {short_note}")
 
